@@ -1,0 +1,13 @@
+::ng-deep app-rates {
+  display: block;
+  height: calc(100vh - 64px);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

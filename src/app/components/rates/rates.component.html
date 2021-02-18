@@ -1,0 +1,16 @@
+<cdk-virtual-scroll-viewport itemSize="22" [style.height]="'100%'">
+  <table>
+    <thead>
+    <tr>
+      <th [style.top]="inverseOfTranslation">Pair</th>
+      <th [style.top]="inverseOfTranslation">Rate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *cdkVirtualFor="let data of dataSource.data">
+      <td>{{ data.symbol }}</td>
+      <td>{{ data.price }}</td>
+    </tr>
+    </tbody>
+  </table>
+</cdk-virtual-scroll-viewport>
