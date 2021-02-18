@@ -14,6 +14,6 @@ export class RatesService {
   }
 
   getRates(): Observable<Array<IRate>> {
-    return this.httpClient.get<Array<any>>('https://api.binance.com/api/v3/ticker/price');
+    return this.httpClient.get<Array<IRate>>('https://api.binance.com/api/v3/ticker/price');
   }
 }
